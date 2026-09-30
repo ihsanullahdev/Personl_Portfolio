@@ -1,0 +1,225 @@
+.about {
+  width: min(100% - 4rem, 1100px);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* =========================
+   Intro
+========================= */
+
+.about_intro {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about_image img {
+  width: 250px;
+  height: 250px;
+
+  display: block;
+  object-fit: cover;
+
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+/* =========================
+   Intro Content
+========================= */
+
+.about_intro_content h1 {
+  margin-bottom: 1rem;
+}
+
+.about_intro_content p {
+  margin-bottom: 1rem;
+
+  color: var(--text-muted, #6b7280);
+  line-height: 1.7;
+}
+
+/* =========================
+   Sections
+========================= */
+
+.about_full_content {
+  margin-top: 3rem;
+}
+
+.about_section {
+  margin-bottom: 2.5rem;
+}
+
+.about_section h3 {
+  margin-bottom: 1rem;
+
+  font-size: var(--h3, 1.5rem);
+  color: var(--text, #111827);
+}
+
+.about_section p {
+  color: var(--text-muted, #6b7280);
+  line-height: 1.7;
+}
+
+/* =========================
+   Lists
+========================= */
+
+.about_list {
+  list-style: none;
+
+  display: grid;
+  gap: 0.7rem;
+
+  padding: 0;
+  margin: 0;
+}
+
+.about_list li {
+  position: relative;
+
+  padding-left: 1.5rem;
+
+  color: var(--text, #111827);
+  line-height: 1.5;
+}
+
+.about_list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: var(--accent, #2563eb);
+  font-weight: 700;
+}
+
+/* =========================
+   Technology Tags
+========================= */
+
+.technology_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.technology_tags span {
+  padding: 0.55rem 0.9rem;
+
+  background: var(--bg, #f8fafc);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 999px;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.technology_tags span:hover {
+  background: var(--accent, #2563eb);
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (max-width: 1024px) {
+  .about {
+    width: min(100% - 3rem, 900px);
+  }
+
+  .about_intro {
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+  }
+
+  .about_image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: min(100% - 2rem, 700px);
+    padding: 2rem 0;
+  }
+
+  .about_intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about_image img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .about_full_content {
+    margin-top: 2.5rem;
+  }
+
+  .about_section {
+    margin-bottom: 2rem;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media screen and (max-width: 480px) {
+  .about {
+    width: calc(100% - 1.5rem);
+    padding: 1.5rem 0;
+  }
+
+  .about_image img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .about_intro_content h1 {
+    font-size: 1.625rem;
+  }
+
+  .about_intro_content p,
+  .about_section p {
+    font-size: 0.875rem;
+  }
+
+  .about_section h3 {
+    font-size: 1.25rem;
+  }
+
+  .technology_tags {
+    gap: 0.5rem;
+  }
+
+  .technology_tags span {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.8125rem;
+  }
+}

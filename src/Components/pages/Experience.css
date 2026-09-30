@@ -1,0 +1,223 @@
+.experience_container {
+  width: min(100% - 4rem, 1100px);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+/* =========================
+   Header
+========================= */
+
+.experience_header {
+  margin-bottom: 2.5rem;
+}
+
+.experience_header h1 {
+  margin-bottom: 0.75rem;
+}
+
+.experience_header p {
+  max-width: 700px;
+  color: var(--text-muted, #6b7280);
+  line-height: 1.6;
+}
+
+/* =========================
+   Experience Card
+========================= */
+
+.experience_card {
+  background: var(--surface, #ffffff);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Header */
+
+.experience_card_header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.experience_card_header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.experience_card_header h4 {
+  color: var(--text-muted, #6b7280);
+  font-weight: 500;
+}
+
+/* Date */
+
+.experience_date,
+.experience_status {
+  flex-shrink: 0;
+
+  padding: 0.45rem 0.75rem;
+
+  background: var(--bg, #f8fafc);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 999px;
+
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.experience_duration {
+  margin-top: 0.75rem;
+  color: var(--accent, #2563eb);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Description */
+
+.experience_description {
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted, #6b7280);
+}
+
+/* =========================
+   Content Blocks
+========================= */
+
+.experience_block {
+  margin-top: 2rem;
+}
+
+.experience_block h3 {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Technology Tags
+========================= */
+
+.experience_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.experience_tag {
+  padding: 0.55rem 0.9rem;
+
+  background: var(--bg, #f8fafc);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 999px;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* =========================
+   Experience List
+========================= */
+
+.experience_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  gap: 0.75rem;
+}
+
+.experience_list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.experience_list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: var(--accent, #2563eb);
+  font-weight: 700;
+}
+
+/* =========================
+   Future Card
+========================= */
+
+.future_card {
+  margin-bottom: 0;
+}
+
+.future_card strong {
+  color: var(--text, #111827);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (max-width: 1024px) {
+  .experience_container {
+    width: min(100% - 3rem, 900px);
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 768px) {
+  .experience_container {
+    width: min(100% - 2rem, 700px);
+    padding: 2rem 0;
+  }
+
+  .experience_card {
+    padding: 1.25rem;
+  }
+
+  .experience_card_header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .experience_date,
+  .experience_status {
+    align-self: flex-start;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media screen and (max-width: 480px) {
+  .experience_container {
+    width: calc(100% - 1.5rem);
+    padding: 1.5rem 0;
+  }
+
+  .experience_card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .experience_card_header h2 {
+    font-size: 1.25rem;
+  }
+
+  .experience_tags {
+    gap: 0.5rem;
+  }
+
+  .experience_tag {
+    font-size: 0.8125rem;
+    padding: 0.45rem 0.7rem;
+  }
+}

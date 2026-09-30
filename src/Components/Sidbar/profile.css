@@ -1,0 +1,106 @@
+/* Main Profile */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Profile Image */
+.profile img {
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #fff;
+  padding: 3px;
+}
+
+/* Name */
+.profile h3 {
+  margin: 12px 0 0;
+  font-size: var(--h3);
+}
+
+/* Icons */
+.profile-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* .profile-icons a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+} */
+
+/* Description */
+.profile p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: var(--font-size-body);
+}
+
+/* Button */
+.profile button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(238, 237, 237);
+  cursor: pointer;
+  font-size: var(--font-size-body);
+
+  border: 1px solid gray;
+}
+.profile-about {
+  margin-top: 5rem;
+}
+.profile-about img {
+  width: 200px;
+  height: 200px;
+}
+
+/* ========================= */
+/* SMALL VERSION - SIDEBAR */
+/* ========================= */
+
+.profile-small img {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+}
+
+/* ========================= */
+/* LARGE VERSION - HOME */
+/* ========================= */
+
+.profile-large {
+  width: 100%;
+  padding: 30px;
+}
+
+.profile-large img {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+}
+
+.profile-large h3 {
+  font-size: var(--h3);
+}
+@media (max-width: 1024px) {
+  .profile h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .profile h3 {
+    font-size: 1.2rem;
+  }
+}
