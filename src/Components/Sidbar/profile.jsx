@@ -1,6 +1,5 @@
-import React from "react";
 import "./profile.css";
-import profileImage from "../../assets/ihsan.jpeg";
+import profileImage from "../../assets/ihsan.png";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 // import { AiFillTikTok } from "react-icons/ai";
 

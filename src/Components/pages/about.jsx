@@ -1,6 +1,5 @@
-import React from "react";
 import "./about.css";
-import profileImage from "../../assets/ihsan.jpeg";
+import profileImage from "../../assets/ihsan.png";
 
 const journey = [
   "Self-learning",

@@ -73,6 +73,7 @@ const projects = [
       "Responsive Design",
     ],
     github: "#",
+    Live: "personl-portfolio-tau.vercel.app",
   },
 ];
 
